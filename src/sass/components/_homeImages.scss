@@ -1,0 +1,26 @@
+.home__imgaes{
+    position:absolute;
+    top:15vh;
+    left:52%;
+    .container{
+        position: relative;
+        .image1{
+            position:absolute;
+            img{
+                max-inline-size: auto;
+            }
+        }
+        .image2{
+            position: absolute;
+            top:18vh;
+            left:-5vw;
+            img{
+                max-inline-size: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        display: none;
+    }
+}

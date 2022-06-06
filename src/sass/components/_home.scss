@@ -1,0 +1,121 @@
+.home{
+    height:102vh;
+    background-color: var(--pink);
+    clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
+    margin-bottom:4rem;
+    .container{
+        height:100vh;
+        background-color: var(--primary-color);
+        clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
+        padding:2rem 8rem;
+        position:relative;
+        .backgrounds{
+            .background1{
+                position:absolute;
+                top:0;
+                left:0;
+            }
+            .background2{
+                position:absolute;
+                top:0;
+                right:0;
+                height:100vh;
+            }
+        }
+
+        .home-container{
+            height:100%;
+            .content{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap:2rem;
+                width:50%;
+                height:90%;
+                justify-content: center;
+                .title-container{
+                    display: flex;
+                    flex-direction: column;
+                    gap:2rem;
+                    img{
+                        display: none;
+                    }
+                    .title{
+                        color:white;
+                        font-size:3.5rem;
+                    }
+                    .description{
+                        color:var(--secondary-color);
+                        font-size:1.1rem;
+                    }
+                }
+                button{
+                    background:var(--pink);
+                    padding:.7rem 2.5rem;
+                    border-radius: 999px;
+                    color:white;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1030px) {
+        .container{
+            padding:1rem 4rem;
+        }
+    }
+
+    @media screen and (max-width:980px) {
+        .container{
+            padding:1rem 3rem;
+            .home-container{
+                .content{
+                    gap:1rem;
+    
+                    .title-container{
+                        .title{
+                            font-size:3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:800px) {
+        height:160vh;
+        .container{
+            height:158vh;
+            padding:0rem;
+            .backgrounds{
+                display: none;
+            }
+            .home-container{
+                .content{
+                    width:100%;
+                    height:max-content;
+                    padding:1rem;
+                    .title-container{
+                        gap:.8rem;
+                        img{
+                            display: block;
+                            max-inline-size: 100%;
+                        }
+
+                        .title{
+                            font-size:2rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        height:130vh;
+        .container{
+            height:128vh;
+        }
+    }
+}
